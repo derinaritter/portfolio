@@ -5,6 +5,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/ui", "motion-v/nuxt", "@nuxt/image"],
   css: ["~/assets/css/main.css"],
+  routeRules: {
+    "/allowance-currency-conversion-aa8c50bf17f6": {
+      headers: {
+        "X-Robots-Tag": "noindex, nofollow, noarchive, nosnippet, noimageindex, noai, noimageai",
+        "Cache-Control": "no-store",
+      },
+    },
+  },
   nitro: {
     preset: "cloudflare_module",
     cloudflare: {
